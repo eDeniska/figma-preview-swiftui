@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  FigmaPreview
+
+  Created by Danis Tazetdinov on 20.05.2021.
+  
+*/
+
+"Components" = "Компоненты";
+"No components found" = "Компоненты не найдены";
+"File ID" = "File ID";
+"Component ID" = "Component ID";
+"File ID is copied to clipboard" = "File ID скопирован в буфер обмена";
+"Component ID is copied to clipboard" = "Component ID скопирован в буфер обмена";
