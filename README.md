@@ -64,7 +64,7 @@ When you need to get component IDs for the elements, you can use `FigmaComponent
 Please note that only published components will be listed (this requires paid Figma subscription to publish these).
 Alternatively, you could still use share links of components from Figma.
 You can use share link, or file id to set up `FigmaComponentList` view. Or, `FigmaComponentList` could use file id passed via `Environment`.
-```
+```swift
 struct ContentView: View {
     var body: some View {
         FigmaComponentsList()
@@ -76,6 +76,8 @@ struct ContentView: View {
 
 You could use FigmaPreviewSwiftUI in any way you want. If you would like to contribute to the projects – contact me.
 Any ideas, suggestions, pull requests are welcome.
+
+Anyway, ping me at [@edeniska](https://twitter.com/edeniska). :)
 
 ## Roadmap
 
