@@ -23,7 +23,7 @@ struct FigmaPreviewApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.figmaAccessToken, "<figma-access-toke>")
+                .environment(\.figmaAccessToken, "<figma-access-token>")
         }
     }
 }
@@ -34,7 +34,7 @@ struct FigmaPreviewApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.figmaAccessToken, "<figma-access-toke>")
+                .environment(\.figmaAccessToken, "<figma-access-token>")
                 .environment(\.figmaFileId, "<default-file-id>")
         }
     }
