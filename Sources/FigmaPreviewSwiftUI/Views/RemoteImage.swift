@@ -22,6 +22,7 @@ struct RemoteImage: View {
             Image(systemName: "cloud")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .foregroundColor(.secondary)
                 .padding()
                 .onAppear {
                     imageLoader.fetch(link: link)
