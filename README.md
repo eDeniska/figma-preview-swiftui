@@ -86,6 +86,10 @@ Any ideas, suggestions, pull requests are welcome.
 
 Anyway, ping me at [@edeniska](https://twitter.com/edeniska). :)
 
+## See also
+
+If you use Zeplin for designs – check [zeplin-preview-swiftui](https://github.com/eDeniska/zeplin-preview-swiftui).
+
 ## Roadmap
 
 At the moment, there are couple of ideas of features to be added:
