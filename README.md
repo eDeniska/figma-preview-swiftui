@@ -13,11 +13,15 @@ Project is heavily inspired by [flutter_figma_preview](https://github.com/vvsevo
 
 FigmaPreviewSwiftUI uses SwiftUI features of macOS 11, iOS 14, tvOS 14, watchOS 7.
 
-## Usage
+## Setup
 
 Add FigmaPreviewSwiftUI to your project via Swift Package Manager.
 
-You need to pass Figma access token via SwiftUI environment.
+Create personal access token in account settings. 
+
+<img width="426" alt="figma-access-token" src="https://user-images.githubusercontent.com/950994/119125124-19e15780-ba3a-11eb-842b-e550ca6439b7.png">
+
+Then pass this Figma access token via `Environment`.
 ```swift
 struct FigmaPreviewApp: App {
     var body: some Scene {
@@ -28,6 +32,9 @@ struct FigmaPreviewApp: App {
     }
 }
 ```
+
+## Usage
+
 If you're using single Figma file for all designs, you can also pass it via `Environment`, so you won't need to specify it for each individual component (file id could be taken from Figma share link – typically, it goes after `/file/`).
 ```swift
 struct FigmaPreviewApp: App {
@@ -60,10 +67,10 @@ struct ContentView: View {
 
 ## Component list to get component IDs
 
-When you need to get component IDs for the elements, you can use `FigmaComponentList` view (it comes with `NavigationView`, so you could put somewhere in developer menu of your app on early stages, or use separate app to browse components).
+When you need to get component IDs for the elements, you can use `FigmaComponentsList` view (it comes with `NavigationView`, so you could put somewhere in developer menu of your app on early stages, or use separate app to browse components).
 Please note that only published components will be listed (this requires paid Figma subscription to publish these).
 Alternatively, you could still use share links of components from Figma.
-You can use share link, or file id to set up `FigmaComponentList` view. Or, `FigmaComponentList` could use file id passed via `Environment`.
+You can use share link, or file id to set up `FigmaComponentsList` view. Or, `FigmaComponentsList` could use file id passed via `Environment`.
 ```swift
 struct ContentView: View {
     var body: some View {
@@ -72,7 +79,7 @@ struct ContentView: View {
 }
 ```
 
-## Usage and contribution
+## Reuse and contribution
 
 You could use FigmaPreviewSwiftUI in any way you want. If you would like to contribute to the projects – contact me.
 Any ideas, suggestions, pull requests are welcome.
